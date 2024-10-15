@@ -1,16 +1,16 @@
 models:
-  # generation/dissertation/redaction
-  - model: meta-llama/Meta-Llama-3-8B
+  - model: microsoft/Phi-3.5-mini-instruct
     parameters:
+      weight: 1.0
+  - model: microsoft/Phi-3-mini-4k-instruct
+    parameters: 
       weight: 0.6
-  # logic/mathematical
-  - model: nvidia/OpenMath2-Llama3.1-8B
-    parameters:
+  - model: microsoft/phi-2
+    parameters: 
       weight: 0.2
-  # classification
-  - model: meta-llama/Llama-2-7b
-    parameters:
+  - model: microsoft/Phi-3-mini-128k-instruct
+    parameters: 
       weight: 0.2
-base_model: meta-llama/Meta-Llama-3-8B
+base_model: microsoft/Phi-3.5-mini-instruct
 merge_method: task_arithmetic
 dtype: float16
